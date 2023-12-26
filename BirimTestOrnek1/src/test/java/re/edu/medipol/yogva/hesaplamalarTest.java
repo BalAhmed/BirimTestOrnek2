@@ -27,7 +27,7 @@ public class hesaplamalarTest {
 	@Test
 	public void testCikart() {
 		int sonuc = hesaplamalar.cikart(10, 5);
-		assertEquals(5, sonuc);
+		assertEquals(5, sonuc); 
 	}
 	
 	@Test
