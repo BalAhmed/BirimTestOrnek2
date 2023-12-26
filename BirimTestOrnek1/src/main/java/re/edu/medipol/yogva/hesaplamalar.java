@@ -8,7 +8,7 @@ public class hesaplamalar {
 	}
 	
 	public static int faktoriyelloop(int n) {
-		int sonuc =1;
+		int sonuc = 1;
 		for(int i=n; i>1; i--) {
 			sonuc = sonuc * i;
 		}
