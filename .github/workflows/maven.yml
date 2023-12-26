@@ -1,4 +1,4 @@
-name: BirimTestOrnek2 CI
+name: BirimTestOrnek1 CI
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-     pull-requests:'write'
+      pull-requests: 'write'
 
     steps:
     - uses: actions/checkout@v3
@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '8'
-        distribution: 'temurin'
+        distribution: 'corretto'
         cache: maven
     - name: Build with Maven
       run: mvn -B install --file BirimTestOrnek1/pom.xml
